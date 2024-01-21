@@ -1,0 +1,17 @@
+#数据库链接配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/new_ershou
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+#配置 PageHelper
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+  auto-runtime-dialect: true
+  close-conn: true
